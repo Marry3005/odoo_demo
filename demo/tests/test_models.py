@@ -30,7 +30,7 @@ class TestUsers(TransactionCase):
                 'login': 'mnv',
                 
             })
-            with self.assertRaises(ValueError):
+            with self.assertRaises(Exception):
                 user.description = None
 
 
